@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin:["https://gmail-clone-seven-nu.vercel.app/"],
+    origin:[""],
     methods:["POST","GET"],
     credentials:true
   }
