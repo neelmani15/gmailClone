@@ -14,7 +14,7 @@ export const getEmails = async (req,res) =>{
     try{
         let emails;
         if(req.params.type === 'inbox'){
-            emails = await Email.find({})
+            emails = await Email.find({ bin: false })
         }
         else if(req.params.type === 'bin'){
             emails = await Email.find({ bin: true })
