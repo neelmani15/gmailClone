@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = 'https://gmail-clone-eta-two.vercel.app/';
 
 const API_GMAIL=async(urlObject,payload,type)=>{
     return await axios({
