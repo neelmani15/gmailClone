@@ -8,7 +8,8 @@ const app = express();
 app.use(cors(
   {
     origin:["https://gmail-clone-eta-two.vercel.app"],
-    methods:["POST","GET"]
+    methods:["POST","GET"],
+    credentials:true
   }
 ));
 app.use(express.urlencoded({extended:true}));
