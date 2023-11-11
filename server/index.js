@@ -7,9 +7,8 @@ const app = express();
 
 app.use(cors(
   {
-    origin:[""],
-    methods:["POST","GET"],
-    credentials:true
+    origin:["*"],
+    methods:["POST","GET"]
   }
 ));
 app.use(express.urlencoded({extended:true}));
